@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfekt Tall</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sentrert">
+        <h1>Perfekte Tall</h1>
+
+        <p>Skriv in nummeret ditt her!</p>
+        <input class="Element" id="T1" type="text" placeholder="Skriv Tall Her">
+        <button class="Element" onclick="SjekkTall()">Sjekk Tall</button>
+        <button class="Element" onclick="TilfTall()">Tilfeldig Tall</button>
+        <p class="Element" id="Svar">Svar kommer her!</p>
+
+        <h2>Skift Farge</h2>
+
+        <!-- Input Color -->
+        <input class="Element" onchange="Palette()" type="color" name="Palette" id="Palette">
+
+        <!-- Input Range -->
+        <div class="Skyveknapp">
+            <input class="Element" onmousemove="RGB()" type="range" name="Skyveknapp" id="Rød" min="0" max="255" value="0">
+            <p>R</p>
+        </div>
+        <div class="Skyveknapp">
+            <input class="Element" onmousemove="RGB()" type="range" name="Skyveknapp" id="Grønn" min="0" max="255" value="0">
+            <p>G</p>
+        </div>
+        <div class="Skyveknapp">
+            <input class="Element" onmousemove="RGB()" type="range" name="Skyveknapp" id="Blå" min="0" max="255" value="0">
+            <p>B</p>
+        </div>
+
+        <!-- Input Text -->
+        <input class="Element" id="FargeTekst" type="text" placeholder="Skriv Farge Her">
+        <button class="Element" onclick="SettFarge()">Sett Farge</button>
+
+        <!-- Tilfeldig Farge -->
+        <button class="Element" onclick="TilfFarge()">Tilfeldig Farge</button>
+    </div>    
+    
+    <script src="script.js"></script>
+</body>
+</html>

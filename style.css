@@ -1,0 +1,14 @@
+.sentrert {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Element {
+    margin: 5px;
+}
+
+.Skyveknapp {
+    display: flex;
+    flex-direction: row-reverse;
+}
